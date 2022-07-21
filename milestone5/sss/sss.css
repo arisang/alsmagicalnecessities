@@ -1,0 +1,132 @@
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0px;
+	position: relative;
+	display: block;
+}
+
+.ssslide {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.ssslide img {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.sssnext, .sssprev {
+	width: 45px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('images/arr.png') no-repeat;
+    background-size: 170%;
+}
+
+.sssprev {
+    left: 3%;
+    background-position: 7px 50%;
+    }
+
+.sssnext {
+    right: 3%;
+    background-position: -38px 50%;
+}
+
+.slider {
+    height:550px;
+    width:992px;
+    margin-bottom:0px;
+    position:relative;
+}
+
+.slider img {
+    height:550px;
+    width:992px;
+    position:relative;
+}
+
+div.slider a:hover {
+    opacity:95%;
+}
+
+@media only screen and (max-width: 992px) { 
+
+    .slider {
+        height:500px;
+        width:768px;
+        padding:0px;
+        margin-bottom:0px;
+    }
+
+    .slider img {
+        height:500px;
+        width:768px;
+    }
+
+    .sssnext, .sssprev {
+        width: 30px;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background: url('images/arr.png') no-repeat;
+        background-size: 200%;
+    }
+
+    .sssprev {
+        left: 3%;
+        background-position: 0 50%;
+    }
+
+    .sssnext {
+        right: 3%;
+        background-position: -31px 50%;
+    }
+}
+
+@media only all and (max-width: 768px) {
+
+   .slider {
+       margin-top: -1px;
+        height:195px;
+        width:100%;
+    }
+    
+    .slider img {
+        height:195px;
+        width:100%;
+    }
+    
+    .sssnext, .sssprev {
+        width: 25px;
+        height: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background: url('images/arr.png') no-repeat;
+    }
+
+    .sssprev {
+        left: 3%;
+        background-position: 0 50%;
+    }
+
+    .sssnext {
+        right: 3%;
+        background-position: -26px 50%;
+    }
+
+}
